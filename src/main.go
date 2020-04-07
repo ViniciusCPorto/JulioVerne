@@ -21,7 +21,7 @@ func main () {
 	router.HandleFunc("/translate", receiveWord).Methods("POST")
 	router.HandleFunc("/translate/{word}", translatedWord).Methods("GET")
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":3000", router))
 }
 
 
